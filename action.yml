@@ -1,0 +1,39 @@
+name: 'Docker Login, Build, Tag & Push Action'
+author: 'Dinush Chathurya'
+description: 'GitHub Action to login, build, tag & push Docker images to DockerHub'
+inputs:
+  username:
+    description: 'Username to connect to Docker registry'
+    required: true
+  password:
+    description: 'Password to connect to Docker registry'
+    required: true
+  context:
+    description: 'Docker build context'
+    required: true
+  file:
+    description: 'Docker build file'
+    required: true
+  repoOwner:
+    description: 'Docker repository owner'
+    required: true
+  repository:
+    description: 'Docker repository'
+    required: true
+  tag:
+    description: 'Docker image tag'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.username }}
+    - ${{ inputs.password }}
+    - ${{ inputs.context }}
+    - ${{ inputs.file }}
+    - ${{ inputs.repoOwner }}
+    - ${{ inputs.repository }}
+    - ${{ inputs.tag }}
+branding:
+  icon: 'upload'
+  color: 'black'
