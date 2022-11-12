@@ -56,6 +56,11 @@ settings->secrets->actions->New repository secret<br><br>
 | repository | Docker repository name  |                          | True     |
 | tag        | Docker image tag        |                          | True     |
 
+
+### Example
+
+You can find a working example in the [example](https://github.com/dinushchathurya/build-tag-push-action-example) repository.
+
 ### Author
 
 Author [Dinush Chathurya](https://dinushchathurya.github.io/)
