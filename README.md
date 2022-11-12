@@ -1,5 +1,7 @@
 <p align="center">
-    <img src="https://img.shields.io/badge/version-1.0.0-blue">
+    <img src="https://img.shields.io/scrutinizer/build/g/dinushchathurya/build-tag-push-action/master">
+    <img src="https://img.shields.io/github/v/release/dinushchathurya/build-tag-push-action?include_prereleases">
+    <img src="https://img.shields.io/github/license/dinushchathurya/build-tag-push-action">
     <img src="https://img.shields.io/badge/dependencies-up%20to%20date-orange">
     <img src="https://img.shields.io/badge/coverage-100%25-yellowgreen">
     <img src="https://img.shields.io/badge/rating-★★★★★-brightgreen">
