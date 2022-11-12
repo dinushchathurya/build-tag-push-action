@@ -39,7 +39,7 @@ jobs:
 
 Setup the following secrets in your repository settings:
 
-settings->secrets->actions->New repository secret<br><br>
+<b>settings->secrets->actions->New repository secret</b><br><br>
 
 |      Name       |      Value       |  Required  | 
 |-----------------|------------------| ---------- |
