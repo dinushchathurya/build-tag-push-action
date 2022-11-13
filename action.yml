@@ -34,7 +34,7 @@ runs:
     - ${{ inputs.repoOwner }}
     - ${{ inputs.repository }}
     - ${{ inputs.tag }}
-  post-entrypoint: './cleanup.sh'
+  post-entrypoint: '/cleanup.sh'
 branding:
   icon: 'upload'
   color: 'black'
