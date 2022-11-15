@@ -61,6 +61,10 @@ Setup the following secrets in your repository settings:
 
 You can find a working example in the [example](https://github.com/dinushchathurya/build-tag-push-action-example) repository.
 
+### Troubleshooting
+
+For troubleshooting & get technical support, please head over to <a href="https://github.com/dinushchathurya/build-tag-push-action/discussions">Discussions section</a>.
+
 ### Author
 
 Author [Dinush Chathurya](https://dinushchathurya.github.io/)
