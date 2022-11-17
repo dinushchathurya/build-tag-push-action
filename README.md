@@ -9,12 +9,14 @@
     <img src="https://img.shields.io/badge/uptime-100%25-brightgreen">
 </p>
 
-## GitHub Action to Login, Build, Tag & Publish Docker Images to DockerHub 
+## GitHub Action to Login, Build, Tag & Publish Docker Images to Docker Registries
 
-This action allow you to login, build, tag & publish Docker image to a DockerHub.
+This action allow you to login, build, tag & publish Docker image to a Docker Registries.
 
 ### Usage
 
+
+#### DockerHub
 ```yaml
 on: [push]
 
@@ -24,7 +26,7 @@ jobs:
     name: Docker Build, Tag & Publish
     steps:
       - name: Build, Tag & Publish Image to DockerHub
-        uses: dinushchathurya/build-tag-push-action@v1.0.4
+        uses: dinushchathurya/build-tag-push-action@v1.2.0
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
@@ -33,6 +35,29 @@ jobs:
           repoOwner: ${{ secrets.DOCKER_USERNAME }}
           repository:  nodejs-docker
           tag: 1.0.0
+```
+
+#### GitHub Container Registry
+
+```yaml
+on: [push]
+
+jobs:
+  docker-build-tag-push:
+    runs-on: ubuntu-latest
+    name: Docker Build, Tag & Publish
+    steps:
+      - name: Docker Login, Build, Tag and Push to AWS Container Registry
+        uses: dinushchathurya/build-tag-push-action@v1.2.0
+        with:
+          username: ${{ github.actor }}
+          password: ${{ secrets.TOKEN }}
+          context: .
+          file: Dockerfile
+          repoOwner: ${{ github.actor }}
+          repository: nodejs-github
+          tag: 1.0.0
+          registry: ghcr.io
 ```
 
 ### Secrets
@@ -45,6 +70,7 @@ Setup the following secrets in your repository settings:
 |-----------------|------------------| ---------- |
 | DOCKER_USERNAME | Docker username  |    True    |
 | DOCKER_PASSWORD | Docker password  |    True    |
+| GITHUB_TOKEN    | GitHub PTA       |    True    |
 
 ### Inputs
 
@@ -55,7 +81,7 @@ Setup the following secrets in your repository settings:
 | repoOwner  | Docker repository owner |   Docker Username        | True     |
 | repository | Docker repository name  |                          | True     |
 | tag        | Docker image tag        |                          | True     |
-
+| registry   | Docker registry         |                          | True     |
 
 ### Example
 
