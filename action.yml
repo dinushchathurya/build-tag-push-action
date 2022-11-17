@@ -23,6 +23,8 @@ inputs:
   tag:
     description: 'Docker image tag'
     required: true
+  registry: 
+    description: 'Registry you want to push the Docker image'
 runs:
   using: 'docker'
   image: 'Dockerfile'
@@ -34,6 +36,7 @@ runs:
     - ${{ inputs.repoOwner }}
     - ${{ inputs.repository }}
     - ${{ inputs.tag }}
+    - ${{ inputs.registry }}
   post-entrypoint: '/cleanup.sh'
 branding:
   icon: 'upload'

@@ -1,3 +1,3 @@
 #!/bin/sh
 
-docker logout
+docker logout $8
