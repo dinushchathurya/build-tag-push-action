@@ -70,7 +70,7 @@ Setup the following secrets in your repository settings:
 |-----------------|------------------| ---------- |
 | DOCKER_USERNAME | Docker username  |    True    |
 | DOCKER_PASSWORD | Docker password  |    True    |
-| GITHUB_TOKEN    | GitHub PTA       |    True    |
+| GITHUB_TOKEN    | GitHub PAT       |    True    |
 
 ### Inputs
 
