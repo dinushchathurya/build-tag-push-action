@@ -47,7 +47,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Docker Build, Tag & Publish
     steps:
-      - name: Docker Login, Build, Tag and Push to AWS Container Registry
+      - name: Docker Login, Build, Tag and Push to GitHub Container Registry
         uses: dinushchathurya/build-tag-push-action@v1.2.0
         with:
           username: ${{ github.actor }}
