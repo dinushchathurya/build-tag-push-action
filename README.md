@@ -81,7 +81,7 @@ Setup the following secrets in your repository settings:
 | repoOwner  | Docker repository owner |   Docker Username        | True     |
 | repository | Docker repository name  |                          | True     |
 | tag        | Docker image tag        |                          | True     |
-| registry   | Docker registry         |                          | True     |
+| registry   | Docker registry         |       DockerHub          | True     |
 
 ### Example
 
