@@ -66,23 +66,41 @@ Setup the following secrets in your repository settings:
 
 <b>settings->secrets->actions->New repository secret</b><br><br>
 
+#### DockerHub
+
 |      Name       |      Value       |  Required  | 
 |-----------------|------------------| ---------- |
 | DOCKER_USERNAME | Docker username  |    True    |
 | DOCKER_PASSWORD | Docker password  |    True    |
-| GITHUB_TOKEN    | GitHub PAT       |    True    |
+
+#### GitHub Container Registry
+
+|      Name       |      Value       |  Required  | 
+|-----------------|------------------| ---------- |
+|      TOKEN      | GitHub PAT       |    True    |
 
 ### Inputs
+
+#### DockerHub
 
 | Name       |          Description    |         Default          | Required |
 |------------|-------------------------|--------------------------| -------- |
 | context    | Docker build context    |           .              | True     |
 | file       | Docker build file       |   {context}/Dockerfile   | True     |
-| repoOwner  | Docker repository owner |   Docker Username        | True     |
+| repoOwner  | Docker repository owner |   GitHub Username        | True     |
 | repository | Docker repository name  |                          | True     |
-| tag        | Docker image tag        |                          | True     |
-| registry   | Docker registry         |       DockerHub          | True     |
+| tag        | Image tag               |                          | True     |
 
+#### GitHub Container Registry
+
+| Name       |          Description    |         Default          | Required |
+|------------|-------------------------|--------------------------| -------- |
+| context    | Docker build context    |           .              | True     |
+| file       | Docker build file       |   {context}/Dockerfile   | True     |
+| repoOwner  | GitHub repository owner |   Docker Username        | True     |
+| repository | GitHub repository name  |                          | True     |
+| tag        | Image tag               |                          | True     |
+| registry   | GitHub registry         |                          | True     |
 ### Example
 
 You can find a working example in the [example](https://github.com/dinushchathurya/build-tag-push-action-example) repository.
