@@ -26,7 +26,7 @@ jobs:
     name: Docker Build, Tag & Publish
     steps:
       - name: Build, Tag & Publish Image to DockerHub
-        uses: dinushchathurya/build-tag-push-action@v1.2.0
+        uses: dinushchathurya/build-tag-push-action@v1.2.1
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
@@ -48,7 +48,7 @@ jobs:
     name: Docker Build, Tag & Publish
     steps:
       - name: Docker Login, Build, Tag and Push to GitHub Container Registry
-        uses: dinushchathurya/build-tag-push-action@v1.2.0
+        uses: dinushchathurya/build-tag-push-action@v1.2.1
         with:
           username: ${{ github.actor }}
           password: ${{ secrets.TOKEN }}
