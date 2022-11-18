@@ -65,7 +65,6 @@ jobs:
 Setup the following secrets in your repository settings:
 
 <b>settings->secrets->actions->New repository secret</b><br><br>
-
 #### DockerHub
 
 |      Name       |      Value       |  Required  | 
@@ -87,7 +86,7 @@ Setup the following secrets in your repository settings:
 |------------|-------------------------|--------------------------| -------- |
 | context    | Docker build context    |           .              | True     |
 | file       | Docker build file       |   {context}/Dockerfile   | True     |
-| repoOwner  | Docker repository owner |   GitHub Username        | True     |
+| repoOwner  | Docker repository owner |   Docker Username        | True     |
 | repository | Docker repository name  |                          | True     |
 | tag        | Image tag               |                          | True     |
 
@@ -97,10 +96,10 @@ Setup the following secrets in your repository settings:
 |------------|-------------------------|--------------------------| -------- |
 | context    | Docker build context    |           .              | True     |
 | file       | Docker build file       |   {context}/Dockerfile   | True     |
-| repoOwner  | GitHub repository owner |   Docker Username        | True     |
+| repoOwner  | GitHub repository owner |   GitHub Username        | True     |
 | repository | GitHub repository name  |                          | True     |
 | tag        | Image tag               |                          | True     |
-| registry   | GitHub registry         |                          | True     |
+| registry   | GitHub registry         |       ghcr.io            | True     |
 ### Example
 
 You can find a working example in the [example](https://github.com/dinushchathurya/build-tag-push-action-example) repository.
