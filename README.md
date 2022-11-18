@@ -82,24 +82,24 @@ Setup the following secrets in your repository settings:
 
 #### DockerHub
 
-| Name       |          Description    |         Default          | Required |
-|------------|-------------------------|--------------------------| -------- |
-| context    | Docker build context    |           .              | True     |
-| file       | Docker build file       |   {context}/Dockerfile   | True     |
-| repoOwner  | Docker repository owner |   Docker Username        | True     |
-| repository | Docker repository name  |                          | True     |
-| tag        | Image tag               |                          | True     |
+| Name       |          Description        |         Default          | Required |
+|------------|-----------------------------|--------------------------| -------- |
+| context    | Docker build context        |           .              | True     |
+| file       | Docker build file           |   {context}/Dockerfile   | True     |
+| repoOwner  | Docker Hub repository owner |   Docker Username        | True     |
+| repository | Docker Hub repository name  |                          | True     |
+| tag        | Image tag                   |                          | True     |
 
 #### GitHub Container Registry
 
-| Name       |          Description    |         Default          | Required |
-|------------|-------------------------|--------------------------| -------- |
-| context    | Docker build context    |           .              | True     |
-| file       | Docker build file       |   {context}/Dockerfile   | True     |
-| repoOwner  | GitHub repository owner |   GitHub Username        | True     |
-| repository | GitHub repository name  |                          | True     |
-| tag        | Image tag               |                          | True     |
-| registry   | GitHub registry         |       ghcr.io            | True     |
+| Name       |          Description     |         Default          | Required |
+|------------|--------------------------|--------------------------| -------- |
+| context    | Docker build context     |           .              | True     |
+| file       | Docker build file        |   {context}/Dockerfile   | True     |
+| repoOwner  | GitHub CR owner          |   GitHub Username        | True     |
+| repository | GitHub CR repository name|                          | True     |
+| tag        | Image tag                |                          | True     |
+| registry   | GitHub registry          |       ghcr.io            | True     |
 
 ## Supported Docker Registries
 
