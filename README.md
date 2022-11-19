@@ -82,24 +82,24 @@ Setup the following secrets in your repository settings:
 
 #### DockerHub
 
-| Name       |          Description        |         Default          | Required |
-|------------|-----------------------------|--------------------------| -------- |
-| context    | Docker build context        |           .              | True     |
-| file       | Docker build file           |   {context}/Dockerfile   | True     |
-| repoOwner  | Docker Hub repository owner |   Docker Username        | True     |
-| repository | Docker Hub repository name  |                          | True     |
-| tag        | Image tag                   |                          | True     |
+| Name       |          Description        | Required |
+|------------|-----------------------------| -------- |
+| context    | Docker build context        | True     |
+| file       | Docker build file           | True     |
+| repoOwner  | Docker Hub repository owner | True     |
+| repository | Docker Hub repository name  | True     |
+| tag        | Image tag                   | True     |
 
 #### GitHub Container Registry
 
-| Name       |          Description     |         Default          | Required |
-|------------|--------------------------|--------------------------| -------- |
-| context    | Docker build context     |           .              | True     |
-| file       | Docker build file        |   {context}/Dockerfile   | True     |
-| repoOwner  | GitHub CR owner          |   GitHub Username        | True     |
-| repository | GitHub CR repository name|                          | True     |
-| tag        | Image tag                |                          | True     |
-| registry   | GitHub registry          |       ghcr.io            | True     |
+| Name       |          Description     | Required |
+|------------|--------------------------| -------- |
+| context    | Docker build context     | True     |
+| file       | Docker build file        | True     |
+| repoOwner  | GitHub CR owner          | True     |
+| repository | GitHub CR repository name| True     |
+| tag        | Image tag                | True     |
+| registry   | GitHub registry          | True     |
 
 ## Supported Docker Registries
 
@@ -109,7 +109,7 @@ Setup the following secrets in your repository settings:
 
 ## Example
 
-You can find a working example in the [example](https://github.com/dinushchathurya/build-tag-push-action-example) repository.
+You can find a working example of this GitHub Action from the [following repository](https://github.com/dinushchathurya/build-tag-push-action-example).
 
 ## Troubleshooting
 
