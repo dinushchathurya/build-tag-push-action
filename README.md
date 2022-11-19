@@ -109,7 +109,7 @@ Setup the following secrets in your repository settings:
 
 ## Example
 
-You can find a working example of this GitHub Action from the [following repository](https://github.com/dinushchathurya/build-tag-push-action-example).
+You can find a working example for this GitHub Action from the [following repository](https://github.com/dinushchathurya/build-tag-push-action-example).
 
 ## Troubleshooting
 
